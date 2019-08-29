@@ -80,7 +80,7 @@
         "vmName": "[parameters('VMName')]",
         "virtualNetworkName": "[concat(parameters('VMName'),'VNet')]",
         "availabilitySetName": "[parameters('AvailabiltySetName')]",
-        "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]"
+        "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
         "autoShutdownStatus": "Enabled",
         "autoShutdownTime": "21:00",
         "autoShutdownTimeZone": "Pacific Standard Time",
